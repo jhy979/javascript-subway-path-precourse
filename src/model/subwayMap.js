@@ -22,7 +22,6 @@ export default class SubwayMap {
   }
 
   getShortestPath(depart, dest) {
-    console.log(this.dijkstra.findShortestPath(depart, dest));
     return this.dijkstra.findShortestPath(depart, dest);
   }
 }

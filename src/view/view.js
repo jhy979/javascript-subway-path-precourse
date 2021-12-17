@@ -9,4 +9,8 @@ export default class View {
     const $app = document.querySelector("#app");
     $app.innerHTML = commonView;
   }
+
+  getResult(result) {
+    console.log(result);
+  }
 }
