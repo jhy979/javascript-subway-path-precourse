@@ -1,6 +1,3 @@
-import View from "./view/view.js";
-import SubwayMap from "./model/subwayMap.js";
+import Controller from "./controller/controller.js";
 
-new View();
-const subwayMap = new SubwayMap();
-subwayMap.getShortestPath("매봉", "양재");
+new Controller();

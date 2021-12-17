@@ -1,4 +1,4 @@
-const commonView = `
+const defaultView = `
 <h1>지하철 길찾기</h1>
 출발역 <input type="text" id="departure-station-name-input"/> <br>
 도착역 <input type="text" id="departure-station-name-input"/> <br>
@@ -8,4 +8,4 @@ const commonView = `
 
 `;
 
-export default commonView;
+export default defaultView;
