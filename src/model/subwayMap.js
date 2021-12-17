@@ -4,11 +4,11 @@ import { defaultMap } from "../utils/constants.js";
 export default class SubwayMap {
   constructor() {
     this.stationInfo = new Set();
-    this.dijkstra = new Dijkstra();
     this.makeDefaultMap("dist");
   }
 
   makeDefaultMap(type) {
+    this.dijkstra = new Dijkstra();
     if (type === "dist") {
       defaultMap.forEach((info) => {
         this.dijkstra.addEdge(info.v1, info.v2, info.dist);
@@ -22,6 +22,7 @@ export default class SubwayMap {
   }
 
   getShortestPath(depart, dest) {
+    console.log(this.dijkstra.findShortestPath(depart, dest));
     return this.dijkstra.findShortestPath(depart, dest);
   }
 }
