@@ -2,10 +2,10 @@ import commonView from "./commonView.js";
 
 export default class View {
   constructor() {
-    this.renderCommonView();
+    this.renderDefaultView();
   }
 
-  renderCommonView() {
+  renderDefaultView() {
     const $app = document.querySelector("#app");
     $app.innerHTML = commonView;
   }
