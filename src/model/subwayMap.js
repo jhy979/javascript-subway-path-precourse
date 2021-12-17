@@ -21,7 +21,7 @@ export default class SubwayMap {
     });
   }
 
-  // getShortestPath(depart, dest) {
-  //   console.log(this.dijkstra.findShortestPath("매봉", "교대"));
-  // }
+  getShortestPath(depart, dest) {
+    return this.dijkstra.findShortestPath(depart, dest);
+  }
 }
